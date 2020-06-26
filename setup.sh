@@ -2,6 +2,7 @@ export FLASK_APP=app:app
 export FLASK_ENV=development
 export DATABASE_URL=postgres://qihyhnwlefrxls:8f95c665822820c348aefa01f642e8a3c7b684a97cc5af6c7e23416c61a4081b@ec2-52-204-232-46.compute-1.amazonaws.com:5432/d469sqic1sf0oi
 export ALGORITHMS=['RS256']
+export SECRET=b'\xe8\x93\x94\xd5\t~:&\\s\xa3\x06\n\x9f\xe4\x1d'     
 export AUTH0_DOMAIN=ahmedkhitaby.auth0.com
 export API_AUDIENCE=FSNDCastingAgency
 export CLIENT_ID=2jO6Y46GpIizYCLjqWcjZsYB0dMRm035
