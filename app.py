@@ -10,6 +10,7 @@ from auth import requires_auth, AuthError
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__)
+    app.secret_key = os.environ.get('SECRET')
     setup_db(app)
     CORS(app)
 
@@ -254,4 +255,4 @@ def create_app(test_config=None):
 app = create_app()
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(debug=True)
