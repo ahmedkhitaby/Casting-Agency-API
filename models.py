@@ -3,13 +3,13 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 import os
 
+db = SQLAlchemy()
 
 DATABASE_URL = os.environ.get('DATABASE_URL')
 
 # database_name = 'castingagency'
 # database_path = 'postgresql://{}:{}@{}/{}'.format(
 #     'postgres', '6253', 'localhost:5432', database_name)
-db = SQLAlchemy()
 
 
 def setup_db(app, DATABASE_URL=DATABASE_URL):
