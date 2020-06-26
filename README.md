@@ -1,6 +1,6 @@
 # Casting Agency API 
 Welcome to my Casting Agency API, Through this API you can create, read, update and delete movies and actors in your agency using different permissions.
-- You can find this API hosted on heroku through this [link](https://capfsnd.herokuapp.com/)
+- You can find this API hosted on heroku through this [link](https://castingagencyapi.herokuapp.com/)
 
 ### Installing Dependencies
 
