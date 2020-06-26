@@ -4,7 +4,7 @@ from flask_migrate import Migrate
 import os
 
 
-DATABASE_URI = os.environ.get('DATABASE_URI')
+DATABASE_URL = os.environ.get('DATABASE_URL')
 
 # database_name = 'castingagency'
 # database_path = 'postgresql://{}:{}@{}/{}'.format(
@@ -12,9 +12,9 @@ DATABASE_URI = os.environ.get('DATABASE_URI')
 db = SQLAlchemy()
 
 
-def setup_db(app, DATABASE_URI=DATABASE_URI):
-    # def setup_db(app, DATABASE_URI=database_path):
-    app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URI
+def setup_db(app, DATABASE_URL=DATABASE_URL):
+    # def setup_db(app, DATABASE_URL=database_path):
+    app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db.app = app
     db.init_app(app)
