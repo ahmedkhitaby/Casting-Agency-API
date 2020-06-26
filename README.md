@@ -255,10 +255,15 @@ my API allows different permissions and different roles:
 
 ****
 
+
+## Online Testing
+You can test The API using Postman or curl all what you need is:
+- get the access_token you need you can login by this [link](https://ahmedkhitaby.auth0.com/authorize?audience=FSNDCastingAgency&response_type=token&client_id=2jO6Y46GpIizYCLjqWcjZsYB0dMRm035&redirect_uri=https://castingagencyapi.herokuapp.com/)
+
+- use our API URL https://castingagencyapi.herokuapp.com/ and the access_tokrn by either postman or curl to test the endpoints
+
 ## Accessing The Application
 - You can use the following credentials for different permissions and different roles
     - Casting Assistant: ```email``` = assistant@ahm.com | ```password``` = CastingPass123456
     - Director: ```email``` = director@ahm.com | ```password``` = CastingPass123456
     - Producer: ```email``` = producer@ahm.com | ```password``` = CastingPass123456
-
-To get the access_token you need you can login by this [link](https://ahmedkhitaby.auth0.com/authorize?audience=FSNDCastingAgency&response_type=token&client_id=2jO6Y46GpIizYCLjqWcjZsYB0dMRm035&redirect_uri=http://127.0.0.1:5000/)
